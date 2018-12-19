@@ -134,7 +134,7 @@
           <img class="img-fluid imgCenter" src="assets/kickflip.jpg" alt="kickflip">
           <div class="row">
             <div class="col-sm-12">            
-              <button type="button" class="btn btn-lg btnCenter btn-danger">Kickflips!</button>
+              <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".kf-modal-lg">Kickflips!</button>
             </div>
           </div>
         </div>
@@ -142,7 +142,7 @@
           <img class="img-fluid imgCenter" src="assets/360flip.jpg" alt="360 flip">
           <div class="row">
             <div class="col-sm-12">            
-              <button type="button" class="btn btn-lg btnCenter btn-danger">360 Flips!</button>
+              <button type="button" class="btn btn-lg btnCenter btn-danger"data-toggle="modal" data-target=".flip-modal-md">360 Flips!</button>
             </div>
           </div>
         </div>
@@ -150,61 +150,108 @@
           <img class="img-fluid imgCenter" src="assets/bscrook.jpg" alt="Back Side Crook">
           <div class="row">
             <div class="col-sm-12">            
-              <button type="button" class="btn btn-lg btnCenter btn-danger">Backside Crook!</button>
+              <button type="button" class="btn btn-lg btnCenter btn-danger" data-toggle="modal" data-target=".bscrook-modal-sm">Backside Crook!</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
 </div>
-
 <!-- CONTAINER FLUID END DIV -->
 </div>
 
-
-<!-- MODAL -->
-<div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<footer class="footer bg-dark">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-lg-3">
+        <img class="img-fluid footerImg" src="assets/KFS_LIGHT.png" alt="KFS Logo">
       </div>
-      <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-12">
-              <img class="img-fluid" src="assets/KFS_modal.png" alt="KFS logo">
+      <div class="col-sm-12 col-lg-9">  
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- MODALS -->
+  <!-- cool stuff -->
+  <div class="modal fade" id="coolStuffModal" tabindex="-1" role="dialog" aria-labelledby="coolStuffLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contentLabel">Get Exclusive Content</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-12">
+                <img class="img-fluid" src="assets/KFS_modal.png" alt="KFS logo">
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="modalFormWrapper">
-                <form>
-                  <div class="form-group">
-                    <label for="forName">Whats' Your Name</label>
-                    <input type="text" class="form-control" id="formName" placeholder="Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="forEmail">Email</label>
-                    <input type="text" class="form-control" id="forEmail" placeholder="Email Address">
-                  </div>
-                </form>
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="modalFormWrapper">
+                  <form>
+                    <div class="form-group">
+                      <label for="forName">Whats' Your Name</label>
+                      <input type="text" class="form-control" id="formName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="forEmail">Email</label>
+                      <input type="text" class="form-control" id="forEmail" placeholder="Email Address">
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Submit</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!-- kickflip -->
+<div class="modal fade kf-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="embed-responsive embed-responsive-16by9">
+         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cC7VEqn-mUM" allowfullscreen></iframe>
+       </div>
+       <p>Learn how to do a kick flip!</p>
+     </div>
+   </div>
+ </div>
+
+ <!-- 360 flip -->
+  <div class="modal fade flip-modal-md" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="embed-responsive embed-responsive-16by9">
+         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cC7VEqn-mUM" allowfullscreen></iframe>
+       </div>
+       <p>Learn how to do a 360 flip!</p>
+     </div>
+   </div>
+ </div>
+
+  <!-- BS crook -->
+  <div class="modal fade bscrook-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-16by9">
+           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cC7VEqn-mUM" allowfullscreen></iframe>
+         </div>
+         <p>Learn how to do a backside crook!</p>
+       </div>
+     </div>
+   </div>
 
  <!-- jQuery first, then other Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
